@@ -1,59 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="hu.ppke.itk.TestDataManager" time="0.59" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="hu.ppke.itk.TestDataManager" time="0.818" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="user.country.format" value="HU"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/faragojanos/Documents/workspace/spring/payment/payment-dao"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.country" value="HU"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment"/>
-    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="user.dir" value="/Users/faragojanos/Documents/workspace/spring/payment/payment-dao"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/67/jmn8rg9x5vl2s6sm1shdc_pc0000gn/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/8c/0w9lwddn3mx35j6rt8g8jvd40000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2864510492308920608.tmp"/>
+    <property name="classworlds.conf" value="/Users/faragojanos/Documents/workspace/spring/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3455841807808973343.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/csani/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/Users/faragojanos/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.12.6"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/csani"/>
+    <property name="user.home" value="/Users/faragojanos"/>
     <property name="user.timezone" value="Europe/Budapest"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="csani"/>
+    <property name="user.name" value="faragojanos"/>
     <property name="java.class.path" value="/Applications/STS.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216/jars/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="hu"/>
+    <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_121"/>
-    <property name="java.ext.dirs" value="/Users/csani/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="/Users/faragojanos/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment/EMBEDDED"/>
+    <property name="maven.home" value="/Users/faragojanos/Documents/workspace/spring/payment/payment-dao/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -62,20 +63,20 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="hu.ppke.itk.TestDataManager" name="test" time="0.59">
-    <error message="Error creating bean with name &apos;hibernate3AnnotatedSessionFactory&apos; defined in URL [file:/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment-dao/target/classes/app-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/annotations/common/reflection/MetadataProvider" type="org.springframework.beans.factory.BeanCreationException">org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;hibernate3AnnotatedSessionFactory&apos; defined in URL [file:/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment-dao/target/classes/app-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/annotations/common/reflection/MetadataProvider
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1710)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:144)
-	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:85)
+  <testcase classname="hu.ppke.itk.TestDataManager" name="test" time="0.818">
+    <error message="Error creating bean with name &apos;hibernate3AnnotatedSessionFactory&apos; defined in URL [file:/Users/faragojanos/Documents/workspace/spring/payment/payment-dao/target/classes/app-context.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Cannot find the expected secondary table: no BB_PAYMENT_TYPE available for hu.ppke.itk.model.Transactions" type="org.springframework.beans.factory.BeanCreationException">org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;hibernate3AnnotatedSessionFactory&apos; defined in URL [file:/Users/faragojanos/Documents/workspace/spring/payment/payment-dao/target/classes/app-context.xml]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Cannot find the expected secondary table: no BB_PAYMENT_TYPE available for hu.ppke.itk.model.Transactions
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
 	at hu.ppke.itk.dao.DataManager.&lt;init&gt;(DataManager.java:27)
 	at hu.ppke.itk.dao.DataManager.getInstance(DataManager.java:20)
 	at hu.ppke.itk.TestDataManager.test(TestDataManager.java:25)
@@ -107,29 +108,45 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-Caused by: java.lang.NoClassDefFoundError: org/hibernate/annotations/common/reflection/MetadataProvider
-	at java.lang.Class.getDeclaredConstructors0(Native Method)
-	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
-	at java.lang.Class.getConstructor0(Class.java:3075)
-	at java.lang.Class.getDeclaredConstructor(Class.java:2178)
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:116)
-	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newConfiguration(LocalSessionFactoryBean.java:818)
-	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:549)
-	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:211)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+Caused by: org.hibernate.AnnotationException: Cannot find the expected secondary table: no BB_PAYMENT_TYPE available for hu.ppke.itk.model.Transactions
+	at org.hibernate.cfg.Ejb3Column.getJoin(Ejb3Column.java:293)
+	at org.hibernate.cfg.Ejb3Column.getTable(Ejb3Column.java:272)
+	at org.hibernate.cfg.AnnotationBinder.bindManyToOne(AnnotationBinder.java:1742)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1251)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:706)
+	at org.hibernate.cfg.AnnotationConfiguration.processArtifactsOfType(AnnotationConfiguration.java:452)
+	at org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:268)
+	at org.hibernate.cfg.Configuration.buildMappings(Configuration.java:1039)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:720)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:188)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1483)
 	... 42 more
-Caused by: java.lang.ClassNotFoundException: org.hibernate.annotations.common.reflection.MetadataProvider
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 52 more
 </error>
-    <system-out>2017-12-19 17:00:16,184 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - &lt;Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6df97b55: startup date [Tue Dec 19 17:00:16 CET 2017]; root of context hierarchy&gt;
-2017-12-19 17:00:16,246 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - &lt;Loading XML bean definitions from URL [file:/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment-dao/target/classes/app-context.xml]&gt;
-2017-12-19 17:00:16,523 INFO [org.springframework.jdbc.datasource.DriverManagerDataSource] - &lt;Loaded JDBC driver: com.mysql.jdbc.Driver&gt;
-2017-12-19 17:00:16,573 WARN [org.springframework.context.support.ClassPathXmlApplicationContext] - &lt;Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;hibernate3AnnotatedSessionFactory&apos; defined in URL [file:/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment-dao/target/classes/app-context.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/hibernate/annotations/common/reflection/MetadataProvider&gt;
+    <system-out>2017-12-19 17:55:35,692 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - &lt;Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35bbe5e8: startup date [Tue Dec 19 17:55:35 CET 2017]; root of context hierarchy&gt;
+2017-12-19 17:55:35,750 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - &lt;Loading XML bean definitions from URL [file:/Users/faragojanos/Documents/workspace/spring/payment/payment-dao/target/classes/app-context.xml]&gt;
+2017-12-19 17:55:35,934 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - &lt;Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10bbd20a: defining beans [dataSource,hibernate3AnnotatedSessionFactory,paymentTypeDao,partnersDao,transactionDao]; root of factory hierarchy&gt;
+2017-12-19 17:55:36,000 INFO [org.springframework.jdbc.datasource.DriverManagerDataSource] - &lt;Loaded JDBC driver: com.mysql.jdbc.Driver&gt;
+2017-12-19 17:55:36,054 INFO [org.hibernate.cfg.annotations.Version] - &lt;Hibernate Annotations 3.2.0.GA&gt;
+2017-12-19 17:55:36,061 INFO [org.hibernate.cfg.Environment] - &lt;Hibernate 3.2.0&gt;
+2017-12-19 17:55:36,066 INFO [org.hibernate.cfg.Environment] - &lt;hibernate.properties not found&gt;
+2017-12-19 17:55:36,068 INFO [org.hibernate.cfg.Environment] - &lt;Bytecode provider name : cglib&gt;
+2017-12-19 17:55:36,072 INFO [org.hibernate.cfg.Environment] - &lt;using JDK 1.4 java.sql.Timestamp handling&gt;
+2017-12-19 17:55:36,231 INFO [org.hibernate.cfg.AnnotationBinder] - &lt;Binding entity from annotated class: hu.ppke.itk.model.Partners&gt;
+2017-12-19 17:55:36,236 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findAllPartners =&gt; FROM Partners pt&gt;
+2017-12-19 17:55:36,236 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findPartnerById =&gt; FROM Partners pt WHERE pt.id = :id&gt;
+2017-12-19 17:55:36,254 INFO [org.hibernate.cfg.annotations.EntityBinder] - &lt;Bind entity hu.ppke.itk.model.Partners on table BB_PARTNERS&gt;
+2017-12-19 17:55:36,277 INFO [org.hibernate.cfg.AnnotationBinder] - &lt;Binding entity from annotated class: hu.ppke.itk.model.PaymentType&gt;
+2017-12-19 17:55:36,278 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findAllPaymentTypes =&gt; FROM PaymentType pt&gt;
+2017-12-19 17:55:36,278 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findPaymentTypeById =&gt; FROM PaymentType pt WHERE pt.id = :id&gt;
+2017-12-19 17:55:36,278 INFO [org.hibernate.cfg.annotations.EntityBinder] - &lt;Bind entity hu.ppke.itk.model.PaymentType on table BB_PAYMENT_TYPE&gt;
+2017-12-19 17:55:36,280 INFO [org.hibernate.cfg.AnnotationBinder] - &lt;Binding entity from annotated class: hu.ppke.itk.model.Transactions&gt;
+2017-12-19 17:55:36,280 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findAllTransactions =&gt; FROM Transactions pt&gt;
+2017-12-19 17:55:36,280 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findTransactionById =&gt; FROM Transactions pt WHERE pt.id = :id&gt;
+2017-12-19 17:55:36,280 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findTransactionByDate =&gt; FROM Transactions pt WHERE pt.transferDate = :transferDate&gt;
+2017-12-19 17:55:36,281 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findTransactionByType =&gt; FROM Transactions pt WHERE pt.paymentType = :paymentType&gt;
+2017-12-19 17:55:36,281 INFO [org.hibernate.cfg.annotations.EntityBinder] - &lt;Bind entity hu.ppke.itk.model.Transactions on table BB_TRANSACTIONS&gt;
+2017-12-19 17:55:36,293 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - &lt;Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10bbd20a: defining beans [dataSource,hibernate3AnnotatedSessionFactory,paymentTypeDao,partnersDao,transactionDao]; root of factory hierarchy&gt;
 </system-out>
   </testcase>
 </testsuite>

@@ -13,11 +13,11 @@ import org.hibernate.annotations.NamedQuery;
 @Entity
 @NamedQueries({
 	@NamedQuery(
-			name="findAll",
+			name="findAllPaymentTypes",
 			query = "FROM PaymentType pt"
 			),
 	@NamedQuery(
-			name = "findById",
+			name = "findPaymentTypeById",
 			query = "FROM PaymentType pt WHERE pt.id = :id"
 			)
 })

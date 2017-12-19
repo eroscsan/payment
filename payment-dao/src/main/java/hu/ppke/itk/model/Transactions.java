@@ -16,19 +16,19 @@ import org.hibernate.annotations.NamedQuery;
 @Entity
 @NamedQueries({
 	@NamedQuery(
-			name="findAll",
+			name="findAllTransactions",
 			query = "FROM Transactions pt"
 			),
 	@NamedQuery(
-			name = "findById",
+			name = "findTransactionById",
 			query = "FROM Transactions pt WHERE pt.id = :id"
 			),
 	@NamedQuery(
-			name = "findByDate",
+			name = "findTransactionByDate",
 			query = "FROM Transactions pt WHERE pt.transferDate = :transferDate"
 			),
 	@NamedQuery(
-			name = "findByType",
+			name = "findTransactionByType",
 			query = "FROM Transactions pt WHERE pt.paymentType = :paymentType"
 			)
 })
