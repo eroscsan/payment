@@ -36,7 +36,7 @@ public class PaymentTypeDaoImpl implements PaymentTypeDao{
 	
 	public PaymentType find(int id) {
 		Session session = this.sessionFactory.openSession();
-		PaymentType paymentType = (PaymentType) session.getNamedQuery("findById")
+		PaymentType paymentType = (PaymentType) session.getNamedQuery("findPaymentTypeById")
 				.setInteger("id", id).uniqueResult();
 		return paymentType;
 	}
@@ -44,7 +44,7 @@ public class PaymentTypeDaoImpl implements PaymentTypeDao{
 	@SuppressWarnings("unchecked")
 	public List<PaymentType> findAll() {
 		Session session = this.sessionFactory.openSession();
-		List<PaymentType> paymentTypeList = session.getNamedQuery("findAll").list();
+		List<PaymentType> paymentTypeList = session.getNamedQuery("findAllPaymentTypes").list();
 		session.close();
 		return paymentTypeList;
 	}

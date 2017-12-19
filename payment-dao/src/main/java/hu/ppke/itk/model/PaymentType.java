@@ -1,5 +1,6 @@
 package hu.ppke.itk.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,7 +29,10 @@ public class PaymentType {
 	@Id
 	@Column(name="PTYP_ID")
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@OneToMany(targetEntity = Transactions.class)
+	@OneToMany(
+			targetEntity = Transactions.class,
+			cascade = CascadeType.ALL
+			)
 	private long id;
 	
 	@Column(name="NAME")

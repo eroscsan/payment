@@ -41,6 +41,7 @@ public class TestDataManager {
 		
 		
 		Transactions t = new Transactions();
+		t.setId(1);
 		t.setPartners(partner);
 		t.setPaymentType(typeDeviza);
 		t.setAmount(3.14F);
@@ -52,7 +53,7 @@ public class TestDataManager {
 		
 		Transactions t2 = manager.getTransactionByID(t.getId());
 		
-		assertEquals(t2.getId(), t.getId());
+		assertEquals(t2.getId(), 1);
 
 		
 	}

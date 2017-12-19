@@ -36,7 +36,7 @@ public class PaymentPartnersDaoImpl implements PartnersDao{
 
 	public Partners find(int id) {
 		Session session = this.sessionFactory.openSession();
-		Partners partners = (Partners) session.getNamedQuery("findByID")
+		Partners partners = (Partners) session.getNamedQuery("findPartnerById")
 				.setInteger("id", id).uniqueResult();
 		session.close();
 		return partners;
@@ -45,7 +45,7 @@ public class PaymentPartnersDaoImpl implements PartnersDao{
 	@SuppressWarnings("unchecked")
 	public List<Partners> findAll() {
 		Session session = this.sessionFactory.openSession();
-		List<Partners> partners = session.getNamedQuery("findAll").list();
+		List<Partners> partners = session.getNamedQuery("findAllPartners").list();
 		session.close();
 		return partners;
 	}

@@ -38,7 +38,7 @@ public class PaymentTransactionDaoImpl implements TransactionsDao{
 
 	public Transactions find(int id) {
 		Session session = this.sessionFactory.openSession();
-		Transactions transaction = (Transactions) session.getNamedQuery("findByID")
+		Transactions transaction = (Transactions) session.getNamedQuery("findTransactionById")
 				.setInteger("id", id).uniqueResult();
 		session.close();
 		return transaction;
@@ -47,7 +47,7 @@ public class PaymentTransactionDaoImpl implements TransactionsDao{
 	@SuppressWarnings("unchecked")
 	public List<Transactions> findByDate(Date d) {
 		Session session = this.sessionFactory.openSession();
-		List<Transactions> transaction = session.getNamedQuery("findByDate")
+		List<Transactions> transaction = session.getNamedQuery("findTransactionByDate")
 				.setLong("transferDate", d.getTime()).list();
 		session.close();
 		return transaction;
@@ -56,7 +56,7 @@ public class PaymentTransactionDaoImpl implements TransactionsDao{
 	@SuppressWarnings("unchecked")
 	public List<Transactions> findByType(PaymentType pt) {
 		Session session = this.sessionFactory.openSession();
-		List<Transactions> transaction = session.getNamedQuery("findByType")
+		List<Transactions> transaction = session.getNamedQuery("findTransactionByType")
 				.setEntity("paymentType", pt).list();
 		session.close();
 		return transaction;
@@ -65,7 +65,7 @@ public class PaymentTransactionDaoImpl implements TransactionsDao{
 	@SuppressWarnings("unchecked")
 	public List<Transactions> findAll() {
 		Session session = this.sessionFactory.openSession();
-		List<Transactions> transaction = session.getNamedQuery("findAll").list();
+		List<Transactions> transaction = session.getNamedQuery("findAllTransactions").list();
 		session.close();
 		return transaction;
 	}

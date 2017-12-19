@@ -13,7 +13,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/BB_PAYMENT_DB" />
 		<property name="username" value="root" />
-		<property name="password" value="asdasd" />
+		<property name="password" value="asd123" />
 	</bean>
 	
 	<bean id="hibernate3AnnotatedSessionFactory" 
@@ -25,6 +25,7 @@
             <prop key="hibernate.dialect"> org.hibernate.dialect.MySQLDialect</prop>
             <prop key="hibernate.current_session_context_class">thread</prop>
 			<prop key="hibernate.show_sql">false</prop>
+			<prop key="hibernate.hbm2ddl.auto">update</prop>
          </props>
       </property>
    </bean>
