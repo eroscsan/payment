@@ -13,7 +13,7 @@
   <packaging>pom</packaging>
 
   <groupId>hu.itk.ppke.erocs.service</groupId>
-  <artifactId>service</artifactId>
+  <artifactId>payment-service</artifactId>
 
   <name>service</name>
   <url>http://maven.apache.org</url>
