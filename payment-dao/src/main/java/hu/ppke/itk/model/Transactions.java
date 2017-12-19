@@ -41,11 +41,11 @@ public class Transactions {
 	private int id;
 	
 	@ManyToOne
-	@JoinColumn(name = "PAYMENT_TYPE", table = "BB_PAYMENT_TYPE")
+	@JoinColumn(name = "PAYMENT_TYPE")
 	private PaymentType paymentType;
 	
-	@OneToMany
-	@JoinColumn(name = "PARTNER_ID", table = "BB_PARTNERS")
+	@ManyToOne
+	@JoinColumn(name = "PARTNER_ID")
 	private Partners partners;
 	
 	@Column(name = "TRANSFER_DATE")
