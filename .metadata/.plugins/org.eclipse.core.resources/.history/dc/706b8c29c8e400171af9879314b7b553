@@ -1,0 +1,45 @@
+package hu.ppke.itk;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import hu.ppke.itk.dao.DataManager;
+import hu.ppke.itk.model.Partners;
+import hu.ppke.itk.model.PaymentType;
+import hu.ppke.itk.model.Transactions;
+
+public class TestDataManager {
+
+	@Test
+	public void test() {
+		DataManager manager = DataManager.getInstance();
+		
+		PaymentType typeForint = new PaymentType();
+		typeForint.setName("forint");
+		
+		PaymentType typeDeviza = new PaymentType();
+		typeDeviza.setId(2);
+		typeDeviza.setName("deviza");
+		
+		Partners partner = new Partners();
+		partner.setName("Csanád");
+		partner.setAccountNumber("2");
+		
+		Transactions t = new Transactions();
+		t.setPartners(partner);
+		t.setPaymentType(typeDeviza);
+		t.setAmount(3.14F);
+		t.setCreate(System.currentTimeMillis());
+		t.setFeeCalculation(true);
+		t.setTransferDate(System.currentTimeMillis());
+		
+		manager.insertTransaction(t);
+		
+		Transactions t2 = manager.getTransactionByID(t.getId());
+		
+		assertEquals(t2.getId(), t.getId());
+		
+	}
+
+}

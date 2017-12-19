@@ -1,0 +1,93 @@
+package hu.ppke.itk.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "BB_TRANSACTIONS")
+public class Transactions {
+	
+	@Id
+	@Column(name="TRANSACTION_ID")
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private long id;
+	
+	@ManyToOne
+	@JoinColumn(name = "PAYMENT_TYPE", table = "BB_PAYMENT_TYPE")
+	private PaymentType paymentType;
+	
+	@ManyToOne
+	@JoinColumn(name = "PARTNER_ID", table = "BB_PARTNERS")
+	private Partners partners;
+	
+	@Column(name = "TRANSFER_DATE")
+	private long transferDate;
+	
+	@Column(name = "CREATED")
+	private long create;
+	
+	@Column(name = "AMOUNT")
+	private float amount;
+	
+	@Column(name = "COMMENT")
+	private String comment;
+	
+	@Column(name = "FEE_CALCULATION")
+	private boolean feeCalculation;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public long getTransferDate() {
+		return transferDate;
+	}
+
+	public void setTransferDate(long transferDate) {
+		this.transferDate = transferDate;
+	}
+
+	public long getCreate() {
+		return create;
+	}
+
+	public void setCreate(long create) {
+		this.create = create;
+	}
+
+	public float getAmount() {
+		return amount;
+	}
+
+	public void setAmount(float amount) {
+		this.amount = amount;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public boolean isFeeCalculation() {
+		return feeCalculation;
+	}
+
+	public void setFeeCalculation(boolean feeCalculation) {
+		this.feeCalculation = feeCalculation;
+	}
+	
+	
+}

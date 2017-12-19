@@ -1,0 +1,52 @@
+package hu.ppke.itk.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+
+@Entity
+@NamedQueries({
+	@NamedQuery(
+			name="findAll",
+			query = "FROM PaymentType pt"
+			),
+	@NamedQuery(
+			name = "findById",
+			query = "FROM PaymentType pt WHERE pt.id = :id"
+			)
+})
+@Table(name = "BB_PAYMENT_TYPE")
+public class PaymentType {
+	
+	@Id
+	@Column(name="PTYP_ID")
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private long id;
+	
+	@Column(name="NAME")
+	private String name;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}

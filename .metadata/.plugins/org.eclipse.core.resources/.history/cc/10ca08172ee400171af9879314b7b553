@@ -1,0 +1,15 @@
+package hu.ppke.itk.dao;
+
+import java.util.List;
+
+import hu.ppke.itk.model.PaymentType;
+
+public interface PaymentTypeDao {
+
+	void save(PaymentType p);
+	public void saveAll(PaymentType p);
+	public void find(PaymentType p);
+	public void findAll(PaymentType p);
+	
+	public List<PaymentType> getPaymentType();
+}

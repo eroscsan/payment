@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="payment-web"/>
+<aop-project name="payment-endpoint"/>
+<aop-project name="payment-service-impl"/>
+<aop-project name="payment-dao"/>
+<aop-project name="payment-service-api"/>
+</aop-reference-model>

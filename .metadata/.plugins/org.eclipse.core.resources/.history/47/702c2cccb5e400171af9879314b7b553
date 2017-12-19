@@ -1,0 +1,46 @@
+package hu.ppke.itk.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class PaymentTransactionDaoImpl implements TransactionsDao{
+	
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	public void save(Transaction p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void saveAll(List<Transaction> p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Transaction find(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Transaction> findByDate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Transaction> findByType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Transaction> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

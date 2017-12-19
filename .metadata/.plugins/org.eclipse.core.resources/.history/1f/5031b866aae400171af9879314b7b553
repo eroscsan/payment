@@ -1,0 +1,6 @@
+package hu.ppke.itk.dao;
+
+public class PaymentTransactionDaoImpl implements TransactionsDao{
+	
+
+}

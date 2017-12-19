@@ -1,0 +1,19 @@
+package hu.ppke.itk.dao;
+
+import java.util.Date;
+import java.util.List;
+
+import org.hibernate.Transaction;
+
+import hu.ppke.itk.model.PaymentType;
+
+public interface TransactionsDao {
+	
+	void save(Transaction p);
+	void saveAll(List<Transaction> p);
+	Transaction find(int id);
+	List<Transaction> findByDate(Date d);
+	List<Transaction> findByType(PaymentType pt);
+	List<Transaction> findAll();
+
+}

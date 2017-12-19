@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/Users/csani/Documents/workspace-sts-3.9.1.RELEASE"/>
+			<item value="/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/payment.payment-0.0.1-SNAPSHOT/pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="hu.itk.ppke.erocs.web.payment_web"/>
+			<item value="hu.itk.ppke.erocs.endpoint.payment_endpoint"/>
+			<item value="hu.itk.ppke.erocs.service_impl.payment_service_impl"/>
+			<item value="hu.itk.ppke.erocs.service_api.service_api"/>
+			<item value="hu.itk.ppke.erocs.service.service"/>
+		</list>
+		<list key="groupId">
+			<item value="hu.itk.ppke.erocs.web"/>
+			<item value="hu.itk.ppke.erocs.endpoint"/>
+			<item value="hu.itk.ppke.erocs.service-impl"/>
+			<item value="hu.itk.ppke.erocs.service-api"/>
+			<item value="hu.itk.ppke.erocs.service"/>
+		</list>
+		<list key="artifactId">
+			<item value="payment-web"/>
+			<item value="payment-endpoint"/>
+			<item value="payment-service-impl"/>
+			<item value="service-api"/>
+			<item value="service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

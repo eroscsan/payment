@@ -1,0 +1,34 @@
+package hu.ppke.itk.dao;
+
+import java.util.List;
+
+import hu.ppke.itk.model.PaymentType;
+
+public class PaymentTypeDaoImpl implements PaymentTypeDao{
+
+	public void save(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void saveAll(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void find(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void findAll(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public List<PaymentType> getPaymentType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

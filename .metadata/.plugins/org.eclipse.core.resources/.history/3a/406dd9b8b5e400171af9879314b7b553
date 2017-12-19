@@ -1,0 +1,13 @@
+package hu.ppke.itk.dao;
+
+import org.hibernate.SessionFactory;
+
+public class PaymentTransactionDaoImpl implements TransactionsDao{
+	
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+}

@@ -1,0 +1,45 @@
+package hu.ppke.itk.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class PaymentPartnersDaoImpl implements PartnersDao{
+	
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
+	public void save(PartnersDao p) {
+		Session session = this.sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		session.merge(p);
+		tx.commit();
+		session.close();
+	}
+
+	public void saveAll(List<PartnersDao> p) {
+		Session session = this.sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		for (PartnersDao partnersDao : p) {
+			session.merge(partnersDao);
+		}
+		tx.commit();
+		session.close();
+	}
+
+	public PartnersDao find(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<PartnersDao> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

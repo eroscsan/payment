@@ -1,0 +1,47 @@
+package hu.ppke.itk.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import hu.ppke.itk.model.PaymentType;
+
+public class PaymentTypeDaoImpl implements PaymentTypeDao{
+	
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	
+	public void save(PaymentType p) {
+		Session session = this.sessionFactory.openSession();
+		Transaction tx = session.beginTransaction();
+		session.persist(p);
+		tx.commit();
+		session.close();
+	}
+	
+	public void saveAll(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void find(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void findAll(PaymentType p) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public List<PaymentType> getPaymentType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

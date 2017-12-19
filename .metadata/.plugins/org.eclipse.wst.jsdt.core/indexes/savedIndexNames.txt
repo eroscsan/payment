@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/csani/Documents/workspace-sts-3.9.1.RELEASE/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2573967992.index
+2578084053.index
+3273007478.index
+3087769072.index
+862060233.index
+2532022248.index

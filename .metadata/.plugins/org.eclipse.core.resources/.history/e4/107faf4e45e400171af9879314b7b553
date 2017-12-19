@@ -1,0 +1,11 @@
+package hu.ppke.itk.dao;
+
+import java.util.List;
+
+public interface PartnersDao {
+	void save(PartnersDao p);
+	void saveAll(List<PartnersDao> p);
+	PartnersDao find(int id);
+	List<PartnersDao> findAll();
+}
+ 

@@ -1,0 +1,10 @@
+package hu.ppke.itk.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "BB_TRANSACTIONS")
+public class Transactions {
+	
+}

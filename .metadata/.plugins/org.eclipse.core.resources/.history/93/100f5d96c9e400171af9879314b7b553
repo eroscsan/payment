@@ -1,0 +1,63 @@
+package hu.ppke.itk;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+import hu.ppke.itk.dao.DataManager;
+import hu.ppke.itk.dao.PartnersDao;
+import hu.ppke.itk.dao.PaymentPartnersDaoImpl;
+import hu.ppke.itk.dao.PaymentTransactionDaoImpl;
+import hu.ppke.itk.dao.PaymentTypeDao;
+import hu.ppke.itk.dao.PaymentTypeDaoImpl;
+import hu.ppke.itk.dao.TransactionsDao;
+import hu.ppke.itk.model.Partners;
+import hu.ppke.itk.model.PaymentType;
+import hu.ppke.itk.model.Transactions;
+
+public class TestDataManager {
+
+	@Test
+	public void test() {
+		ApplicationContext appContext = new ClassPathXmlApplicationContext("file:OrderPersistenceTests-context.xml");
+		
+		PaymentTypeDao paymentTypeDao = appContext.getBean("paymentTypeDao", PaymentTypeDaoImpl.class);
+		PartnersDao partnersDao = appContext.getBean("partnersDao", PaymentPartnersDaoImpl.class);
+		TransactionsDao transactionsDao = appContext.getBean("transactionDao", PaymentTransactionDaoImpl.class);
+		
+		PaymentType typeForint = new PaymentType();
+		typeForint.setName("forint");
+		
+		paymentTypeDao.save(typeForint);
+		
+		PaymentType typeDeviza = new PaymentType();
+		typeDeviza.setName("deviza");
+		paymentTypeDao.save(typeDeviza);
+		
+		Partners partner = new Partners();
+		partner.setName("Csanád");
+		partner.setAccountNumber("2");
+		
+		partnersDao.save(partner);
+		
+		Transactions t = new Transactions();
+		t.setPartners(partner);
+		t.setPaymentType(typeDeviza);
+		t.setAmount(3.14F);
+		t.setCreate(System.currentTimeMillis());
+		t.setFeeCalculation(true);
+		t.setTransferDate(System.currentTimeMillis());
+		
+		transactionsDao.save(t);
+		
+		Transactions t2 = transactionsDao.find(t.getId());
+		
+		assertEquals(t2.getId(), t.getId());
+
+		
+	}
+
+}

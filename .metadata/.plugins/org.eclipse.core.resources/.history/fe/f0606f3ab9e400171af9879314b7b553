@@ -1,0 +1,26 @@
+package hu.ppke.itk.dao;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DataManager {
+	
+	private static DataManager instance = null;
+	private ApplicationContext appContext;
+	
+	private PaymentTypeDao paymentTypeDao;
+	private PartnersDao partnersDao;
+	private TransactionsDao transactionsDao;
+	
+	public static DataManager getInstance() {
+		if(instance == null) {
+			instance = new DataManager();
+		}
+		
+		return instance;
+	}
+
+	private DataManager() {
+		appContext = new ClassPathXmlApplicationContext("META-INF/spring/app-context.xml");
+	}
+}

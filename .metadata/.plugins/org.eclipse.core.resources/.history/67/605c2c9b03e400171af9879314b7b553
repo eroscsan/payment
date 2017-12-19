@@ -1,0 +1,5 @@
+package hu.ppke.itk.model;
+
+public class Transactions {
+
+}
