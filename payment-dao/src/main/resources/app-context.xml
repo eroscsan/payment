@@ -29,6 +29,11 @@
          </props>
       </property>
    </bean>
+   
+   <bean id="transactionManager"
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="hibernate3AnnotatedSessionFactory" />
+</bean>
 	
 	<bean name="paymentTypeDao" id="paymentTypeDao" class="hu.ppke.itk.dao.PaymentTypeDaoImpl">
 		<property name="sessionFactory" ref="hibernate3AnnotatedSessionFactory" />
@@ -40,6 +45,11 @@
 	
 	<bean id="transactionDao" class="hu.ppke.itk.dao.PaymentTransactionDaoImpl">
 		<property name="sessionFactory" ref="hibernate3AnnotatedSessionFactory" />
+	</bean>
+	<bean id="dataManager" class="hu.ppke.itk.dao.DataManager" scope="singleton">
+		<property name="paymentTypeDao" ref="paymentTypeDao" />
+		<property name="partnersDao" ref="partnersDao"/>
+		<property name="transactionsDao" ref="transactionDao"/>
 	</bean>
 
 </beans>

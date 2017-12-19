@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="hu.ppke.itk.TestDataManager" time="1.754" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="hu.ppke.itk.TestDataManager" time="1.767" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -27,7 +27,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/faragojanos/Documents/workspace/spring/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf492885571454809762.tmp"/>
+    <property name="classworlds.conf" value="/Users/faragojanos/Documents/workspace/spring/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7107747415861691080.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/faragojanos/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,113 +63,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="hu.ppke.itk.TestDataManager" name="test" time="1.754">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at hu.ppke.itk.TestDataManager.test(TestDataManager.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-    <system-out>2017-12-19 19:14:38,552 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - &lt;Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35bbe5e8: startup date [Tue Dec 19 19:14:38 CET 2017]; root of context hierarchy&gt;
-2017-12-19 19:14:38,611 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - &lt;Loading XML bean definitions from URL [file:/Users/faragojanos/Documents/workspace/spring/payment/payment-dao/target/classes/app-context.xml]&gt;
-2017-12-19 19:14:38,814 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - &lt;Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10bbd20a: defining beans [dataSource,hibernate3AnnotatedSessionFactory,paymentTypeDao,partnersDao,transactionDao]; root of factory hierarchy&gt;
-2017-12-19 19:14:38,880 INFO [org.springframework.jdbc.datasource.DriverManagerDataSource] - &lt;Loaded JDBC driver: com.mysql.jdbc.Driver&gt;
-2017-12-19 19:14:38,933 INFO [org.hibernate.cfg.annotations.Version] - &lt;Hibernate Annotations 3.2.0.GA&gt;
-2017-12-19 19:14:38,941 INFO [org.hibernate.cfg.Environment] - &lt;Hibernate 3.2.0&gt;
-2017-12-19 19:14:38,944 INFO [org.hibernate.cfg.Environment] - &lt;hibernate.properties not found&gt;
-2017-12-19 19:14:38,946 INFO [org.hibernate.cfg.Environment] - &lt;Bytecode provider name : cglib&gt;
-2017-12-19 19:14:38,948 INFO [org.hibernate.cfg.Environment] - &lt;using JDK 1.4 java.sql.Timestamp handling&gt;
-2017-12-19 19:14:39,082 INFO [org.hibernate.cfg.AnnotationBinder] - &lt;Binding entity from annotated class: hu.ppke.itk.model.Partners&gt;
-2017-12-19 19:14:39,088 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findAllPartners =&gt; FROM Partners pt&gt;
-2017-12-19 19:14:39,088 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findPartnerById =&gt; FROM Partners pt WHERE pt.id = :id&gt;
-2017-12-19 19:14:39,107 INFO [org.hibernate.cfg.annotations.EntityBinder] - &lt;Bind entity hu.ppke.itk.model.Partners on table BB_PARTNERS&gt;
-2017-12-19 19:14:39,130 INFO [org.hibernate.cfg.AnnotationBinder] - &lt;Binding entity from annotated class: hu.ppke.itk.model.PaymentType&gt;
-2017-12-19 19:14:39,130 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findAllPaymentTypes =&gt; FROM PaymentType pt&gt;
-2017-12-19 19:14:39,130 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findPaymentTypeById =&gt; FROM PaymentType pt WHERE pt.id = :id&gt;
-2017-12-19 19:14:39,131 INFO [org.hibernate.cfg.annotations.EntityBinder] - &lt;Bind entity hu.ppke.itk.model.PaymentType on table BB_PAYMENT_TYPE&gt;
-2017-12-19 19:14:39,135 INFO [org.hibernate.cfg.AnnotationBinder] - &lt;Binding entity from annotated class: hu.ppke.itk.model.Transactions&gt;
-2017-12-19 19:14:39,135 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findAllTransactions =&gt; FROM Transactions pt&gt;
-2017-12-19 19:14:39,135 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findTransactionById =&gt; FROM Transactions pt WHERE pt.id = :id&gt;
-2017-12-19 19:14:39,136 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findTransactionByDate =&gt; FROM Transactions pt WHERE pt.transferDate = :transferDate&gt;
-2017-12-19 19:14:39,136 INFO [org.hibernate.cfg.annotations.QueryBinder] - &lt;Binding named query: findTransactionByType =&gt; FROM Transactions pt WHERE pt.paymentType = :paymentType&gt;
-2017-12-19 19:14:39,136 INFO [org.hibernate.cfg.annotations.EntityBinder] - &lt;Bind entity hu.ppke.itk.model.Transactions on table BB_TRANSACTIONS&gt;
-2017-12-19 19:14:39,218 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - &lt;Building new Hibernate SessionFactory&gt;
-2017-12-19 19:14:39,233 INFO [org.hibernate.connection.ConnectionProviderFactory] - &lt;Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider&gt;
-2017-12-19 19:14:39,535 INFO [org.hibernate.cfg.SettingsFactory] - &lt;RDBMS: MySQL, version: 5.7.20&gt;
-2017-12-19 19:14:39,535 INFO [org.hibernate.cfg.SettingsFactory] - &lt;JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )&gt;
-2017-12-19 19:14:39,549 INFO [org.hibernate.dialect.Dialect] - &lt;Using dialect: org.hibernate.dialect.MySQLDialect&gt;
-2017-12-19 19:14:39,553 INFO [org.hibernate.transaction.TransactionFactoryFactory] - &lt;Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory&gt;
-2017-12-19 19:14:39,554 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - &lt;No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)&gt;
-2017-12-19 19:14:39,554 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Automatic flush during beforeCompletion(): disabled&gt;
-2017-12-19 19:14:39,555 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Automatic session close at end of transaction: disabled&gt;
-2017-12-19 19:14:39,555 INFO [org.hibernate.cfg.SettingsFactory] - &lt;JDBC batch size: 15&gt;
-2017-12-19 19:14:39,555 INFO [org.hibernate.cfg.SettingsFactory] - &lt;JDBC batch updates for versioned data: disabled&gt;
-2017-12-19 19:14:39,556 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Scrollable result sets: enabled&gt;
-2017-12-19 19:14:39,556 INFO [org.hibernate.cfg.SettingsFactory] - &lt;JDBC3 getGeneratedKeys(): enabled&gt;
-2017-12-19 19:14:39,556 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Connection release mode: auto&gt;
-2017-12-19 19:14:39,557 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Maximum outer join fetch depth: 2&gt;
-2017-12-19 19:14:39,557 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Default batch fetch size: 1&gt;
-2017-12-19 19:14:39,557 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Generate SQL with comments: disabled&gt;
-2017-12-19 19:14:39,557 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Order SQL updates by primary key: disabled&gt;
-2017-12-19 19:14:39,557 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory&gt;
-2017-12-19 19:14:39,559 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - &lt;Using ASTQueryTranslatorFactory&gt;
-2017-12-19 19:14:39,559 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Query language substitutions: {}&gt;
-2017-12-19 19:14:39,559 INFO [org.hibernate.cfg.SettingsFactory] - &lt;JPA-QL strict compliance: disabled&gt;
-2017-12-19 19:14:39,560 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Second-level cache: enabled&gt;
-2017-12-19 19:14:39,560 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Query cache: disabled&gt;
-2017-12-19 19:14:39,560 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Cache provider: org.hibernate.cache.NoCacheProvider&gt;
-2017-12-19 19:14:39,560 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Optimize cache for minimal puts: disabled&gt;
-2017-12-19 19:14:39,560 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Structured second-level cache entries: disabled&gt;
-2017-12-19 19:14:39,563 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Statistics: disabled&gt;
-2017-12-19 19:14:39,563 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Deleted entity synthetic identifier rollback: disabled&gt;
-2017-12-19 19:14:39,564 INFO [org.hibernate.cfg.SettingsFactory] - &lt;Default entity-mode: pojo&gt;
-2017-12-19 19:14:39,589 INFO [org.hibernate.impl.SessionFactoryImpl] - &lt;building session factory&gt;
-2017-12-19 19:14:39,792 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - &lt;Not binding factory to JNDI, no JNDI name configured&gt;
-2017-12-19 19:14:39,794 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - &lt;Running hbm2ddl schema update&gt;
-2017-12-19 19:14:39,795 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - &lt;fetching database metadata&gt;
-2017-12-19 19:14:39,805 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - &lt;updating schema&gt;
-2017-12-19 19:14:39,835 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;table found: BB_PAYMENT_DB.BB_PARTNERS&gt;
-2017-12-19 19:14:39,835 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;columns: [account_number, partner_id, name]&gt;
-2017-12-19 19:14:39,836 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;foreign keys: []&gt;
-2017-12-19 19:14:39,836 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;indexes: [primary]&gt;
-2017-12-19 19:14:39,840 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;table found: BB_PAYMENT_DB.BB_PAYMENT_TYPE&gt;
-2017-12-19 19:14:39,841 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;columns: [ptyp_id, name]&gt;
-2017-12-19 19:14:39,841 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;foreign keys: []&gt;
-2017-12-19 19:14:39,841 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;indexes: [primary]&gt;
-2017-12-19 19:14:39,849 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;table found: BB_PAYMENT_DB.BB_TRANSACTIONS&gt;
-2017-12-19 19:14:39,849 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;columns: [transaction_id, amount, payment_type, partner_id, fee_calculation, description, transfer_date, create_date]&gt;
-2017-12-19 19:14:39,850 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;foreign keys: [fke6f73af45672d623, fke6f73af43f795ced]&gt;
-2017-12-19 19:14:39,850 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - &lt;indexes: [fke6f73af45672d623, fke6f73af43f795ced, primary]&gt;
-2017-12-19 19:14:39,850 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - &lt;schema update complete&gt;
-2017-12-19 19:14:40,035 DEBUG [org.hibernate.SQL] - &lt;insert into BB_PAYMENT_TYPE (NAME) values (?)&gt;
-2017-12-19 19:14:40,050 DEBUG [org.hibernate.SQL] - &lt;insert into BB_PARTNERS (NAME, ACCOUNT_NUMBER) values (?, ?)&gt;
-2017-12-19 19:14:40,052 DEBUG [org.hibernate.SQL] - &lt;insert into BB_TRANSACTIONS (PAYMENT_TYPE, PARTNER_ID, TRANSFER_DATE, CREATE_DATE, AMOUNT, DESCRIPTION, FEE_CALCULATION) values (?, ?, ?, ?, ?, ?, ?)&gt;
-2017-12-19 19:14:40,073 DEBUG [org.hibernate.SQL] - &lt;select transactio0_.TRANSACTION_ID as TRANSACT1_2_, transactio0_.PAYMENT_TYPE as PAYMENT8_2_, transactio0_.PARTNER_ID as PARTNER7_2_, transactio0_.TRANSFER_DATE as TRANSFER2_2_, transactio0_.CREATE_DATE as CREATE3_2_, transactio0_.AMOUNT as AMOUNT2_, transactio0_.DESCRIPTION as DESCRIPT5_2_, transactio0_.FEE_CALCULATION as FEE6_2_ from BB_TRANSACTIONS transactio0_ where transactio0_.TRANSACTION_ID=?&gt;
-</system-out>
-  </testcase>
+  <testcase classname="hu.ppke.itk.TestDataManager" name="test" time="1.767"/>
 </testsuite>

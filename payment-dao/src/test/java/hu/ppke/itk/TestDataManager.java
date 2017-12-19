@@ -22,7 +22,8 @@ public class TestDataManager {
 
 	@Test
 	public void test() {
-		DataManager manager = DataManager.getInstance();
+		ApplicationContext appContext = new ClassPathXmlApplicationContext("classpath*:app-context.xml");
+		DataManager manager = appContext.getBean(DataManager.class);
 		/*ApplicationContext appContext = new ClassPathXmlApplicationContext("classpath*:OrderPersistenceTests-context.xml");
 		
 		PaymentTypeDao paymentTypeDao = appContext.getBean("paymentTypeDao", PaymentTypeDaoImpl.class);
